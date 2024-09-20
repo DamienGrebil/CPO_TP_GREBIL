@@ -22,6 +22,8 @@ public class P1_manipNombresInt_Damien {
         int Somme;
         int Diff;
         int Produit;
+        int Div;
+        int Reste;
         Scanner sc = new Scanner(System.in);
         System.out.println(" Choississez une valeure:");
         Valeure1 = sc.nextInt();
@@ -30,7 +32,10 @@ public class P1_manipNombresInt_Damien {
         Somme = Valeure1+Valeure2;
         Diff = Valeure1-Valeure2;
         Produit = Valeure1*Valeure2;
-        System.out.println("La somme des deux valeures est:"+ Somme +"\n La différence des deux valeures est: "+ Diff +"\n Le produit des deux valeures est: "+ Produit );
+        System.out.println("La somme des deux valeures est:"+ Somme +"\n La difference des deux valeures est: "+ Diff +"\n Le produit des deux valeures est: "+ Produit );
+        Div = Valeure1/Valeure2;
+        Reste = Valeure1%Valeure2;
+        System.out.println("Le resultat entier de la division est: "+Div +"\nLe reste est: "+ Reste );
     }
     
 }
