@@ -1,8 +1,11 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * TP1
+ * DamienGrebil
+ * Septembre 2024
  */
 package p1_manipnombresint_damien;
+
+import java.util.Scanner;
 
 /**
  *
@@ -14,7 +17,20 @@ public class P1_manipNombresInt_Damien {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int Valeure1; 
+        int Valeure2;
+        int Somme;
+        int Diff;
+        int Produit;
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Choississez une valeure:");
+        Valeure1 = sc.nextInt();
+        System.out.println(" Choississez une deuxieme valeure:");
+        Valeure2 = sc.nextInt();
+        Somme = Valeure1+Valeure2;
+        Diff = Valeure1-Valeure2;
+        Produit = Valeure1*Valeure2;
+        System.out.println("La somme des deux valeures est:"+ Somme +"\n La différence des deux valeures est: "+ Diff +"\n Le produit des deux valeures est: "+ Produit );
     }
     
 }
