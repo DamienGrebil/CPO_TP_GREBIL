@@ -34,6 +34,6 @@ public class Exo2 {
         }
         // Affichage du resultat
         System.out.println();
-        System.out.println("La somme des " + nb + "entiers est: " + result);
+        System.out.println("La somme des " + nb + " entiers est: " + result);
     }
 }
