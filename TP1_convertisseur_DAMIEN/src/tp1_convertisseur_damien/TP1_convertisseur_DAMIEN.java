@@ -40,8 +40,8 @@ public class TP1_convertisseur_DAMIEN {
     }
     
     public static double FarenheitVersKelvin(double tKELV ) {
-        tKELV = KelvinVersCelcius(tKELV);
-        tKELV = CelciusVersFarenheit(tKELV);
+        tKELV = FarenheitVersCelcius(tKELV);
+        tKELV = CelciusVersKelvin(tKELV);
         return tKELV;
     }
     
@@ -51,11 +51,6 @@ public class TP1_convertisseur_DAMIEN {
     public static void main(String[] args) {
         double temp;
         double C2K ;
-        double C2F ;
-        double F2C ;
-        double F2K ;
-        double K2F ;
-        double K2C ;
         int type;
         Scanner sc = new Scanner(System.in);
         System.out.println("saisssissez la temperature");
