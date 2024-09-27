@@ -77,7 +77,7 @@ public class TP1_guessMyNumber_DAMIEN {
             while (val != n) {
                 compt += 1;
                 if (compt < 7) {
-                System.out.println("vous etes en mode difficile vous n'avez que 7 essais"); 
+                System.out.println("vous etes en mode difficile vous n'avez plus que 6 ESSAIS"); 
                     if (val < n) {
                         System.out.println("Trop petit ");
                         System.out.println("Choississez une valeure entre 0 et 100");
@@ -94,7 +94,9 @@ public class TP1_guessMyNumber_DAMIEN {
                     break;
                 }
             }
-            System.out.println("gagne, vous avez fait " + compt + " essais");
+            if(compt<7){
+                System.out.println("gagne, vous avez fait " + compt + " essais");
+            }
         }
     }
 }
