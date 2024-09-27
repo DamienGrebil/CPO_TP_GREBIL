@@ -19,7 +19,7 @@ public class TP1_guessMyNumber_DAMIEN {
      */
     public static void main(String[] args) {
         int val;
-        int compt=0;
+        int compt=1;
         Random generateurAleat = new Random();
         int n = generateurAleat.nextInt(100);
         Scanner sc = new Scanner(System.in);
@@ -37,9 +37,10 @@ public class TP1_guessMyNumber_DAMIEN {
                 System.out.println("Choississez une valeure entre 0 et 100");
                 val = sc.nextInt();
             }else if (val == n) {
-                System.out.println("gagne, vous avez fait "+ compt+" essais");
+                break;
             }
         }
+    System.out.println("gagne, vous avez fait "+ compt+" essais");
     }
     
 }
