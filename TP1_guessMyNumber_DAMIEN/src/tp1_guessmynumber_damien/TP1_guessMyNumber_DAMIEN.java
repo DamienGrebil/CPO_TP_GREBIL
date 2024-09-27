@@ -32,13 +32,11 @@ public class TP1_guessMyNumber_DAMIEN {
                 System.out.println("Trop petit ");
                 System.out.println("Choississez une valeure entre 0 et 100");
                 val = sc.nextInt();
-            }
-            if (val > n) {
+            }else if (val > n) {
                 System.out.println("Trop grand ");
                 System.out.println("Choississez une valeure entre 0 et 100");
                 val = sc.nextInt();
-            }
-            if (val == n) {
+            }else if (val == n) {
                 System.out.println("gagne, vous avez fait "+ compt+" essais");
             }
         }
