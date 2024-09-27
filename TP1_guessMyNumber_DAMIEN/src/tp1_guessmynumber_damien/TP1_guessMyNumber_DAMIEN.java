@@ -25,7 +25,7 @@ public class TP1_guessMyNumber_DAMIEN {
         int n = generateurAleat.nextInt(100);
         Scanner sc = new Scanner(System.in);
         System.out.println(n);
-        System.out.println("Choississez le niveau de difficulté: \n1)facile \n2)normal \n3)difficile");
+        System.out.println("Choississez le niveau de difficulte: \n1)facile \n2)normal \n3)difficile");
         jeu = sc.nextInt();
         System.out.println("Choississez une valeure entre 0 et 100");
         val = sc.nextInt();
@@ -42,10 +42,10 @@ public class TP1_guessMyNumber_DAMIEN {
                     System.out.println("Choississez une valeure entre 0 et 100");
                     val = sc.nextInt();
                 } else if (val > n) {
-                    if (val-n > 10) {
+                    if (val - n > 10) {
                         System.out.println("Trop grand ");
                     }
-                    if (val-n < 10) {
+                    if (val - n < 10) {
                         System.out.println("Trop grand mais pas loin ");
                     }
                     System.out.println("Choississez une valeure entre 0 et 100");
@@ -68,6 +68,29 @@ public class TP1_guessMyNumber_DAMIEN {
                     System.out.println("Choississez une valeure entre 0 et 100");
                     val = sc.nextInt();
                 } else if (val == n) {
+                    break;
+                }
+            }
+            System.out.println("gagne, vous avez fait " + compt + " essais");
+        }
+        if (jeu == 3) {/*Mode difficile*/
+            while (val != n) {
+                compt += 1;
+                if (compt < 7) {
+                System.out.println("vous etes en mode difficile vous n'avez que 7 essais"); 
+                    if (val < n) {
+                        System.out.println("Trop petit ");
+                        System.out.println("Choississez une valeure entre 0 et 100");
+                        val = sc.nextInt();
+                    } else if (val > n) {
+                        System.out.println("Trop grand ");
+                        System.out.println("Choississez une valeure entre 0 et 100");
+                        val = sc.nextInt();
+                    } else if (val == n) {
+                        break;
+                    }
+                } else {
+                    System.out.println("vous navez plus de vies");
                     break;
                 }
             }
