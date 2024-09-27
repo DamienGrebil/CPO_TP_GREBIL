@@ -42,10 +42,10 @@ public class TP1_guessMyNumber_DAMIEN {
                     System.out.println("Choississez une valeure entre 0 et 100");
                     val = sc.nextInt();
                 } else if (val > n) {
-                    if (val-n < 10) {
+                    if (val-n > 10) {
                         System.out.println("Trop grand ");
                     }
-                    if (val-n > 10) {
+                    if (val-n < 10) {
                         System.out.println("Trop grand mais pas loin ");
                     }
                     System.out.println("Choississez une valeure entre 0 et 100");
@@ -74,5 +74,4 @@ public class TP1_guessMyNumber_DAMIEN {
             System.out.println("gagne, vous avez fait " + compt + " essais");
         }
     }
-}
 }
