@@ -90,7 +90,7 @@ public class TP1_guessMyNumber_DAMIEN {
                         break;
                     }
                 } else {
-                    System.out.println("vous navez plus de vies");
+                    System.out.println("C'est perdu, vous navez plus de vies!!");
                     break;
                 }
             }
