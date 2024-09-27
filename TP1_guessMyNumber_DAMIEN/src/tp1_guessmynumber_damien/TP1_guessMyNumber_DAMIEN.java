@@ -33,10 +33,10 @@ public class TP1_guessMyNumber_DAMIEN {
             while (val != n) {
                 compt += 1;
                 if (val < n) {
-                    if (n - val < 10) {
+                    if (n - val > 10) {
                         System.out.println("Trop petit ");
                     }
-                    if (n - val > 10) {
+                    if (n - val < 10) {
                         System.out.println("Trop petit mais pas loin ");
                     }
                     System.out.println("Choississez une valeure entre 0 et 100");
