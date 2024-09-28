@@ -18,17 +18,25 @@ public class TP1_stats_Grebil {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int m;
-        int [] tab =new int [6];
+        int[] facesDes = new int[6];
         Scanner sc = new Scanner(System.in);
-        System.out.println("saississez un nombre entier");
-        m = sc.nextInt();
-        for (int i=0;i<m;i++){
-            Random generateurAleat = new Random();
-            tab[i] = generateurAleat.nextInt(6);
-            System.out.print(tab[i]+" ");
+        System.out.println("Entrez le nombre de lancers de dés : ");
+        int m = sc.nextInt();
+        Random rand = new Random();
+        for (int i = 0; i < m; i++) {
+            int lancer = rand.nextInt(6); // Génère un nombre aléatoire entre 0 et 5
+            facesDes[lancer]++; // Incrémente la face correspondante
         }
-        
+        System.out.println("Résultats des lancers de dés :");
+        for (int i = 0; i < facesDes.length; i++) {
+            System.out.println("Face " + (i + 1) + " : " + facesDes[i] + " fois");
+        }
+        System.out.println("\nRésultats en pourcentages :");
+        for (int i = 0; i < facesDes.length; i++) {
+            double pourcentage = ((double) facesDes[i] / m) * 100;
+            System.out.printf("Face %d : %.2f%%\n", (i + 1), pourcentage);
+        }
     }
-    
 }
+
+
