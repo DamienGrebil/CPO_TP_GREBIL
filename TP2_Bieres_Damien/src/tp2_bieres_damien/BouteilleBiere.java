@@ -18,4 +18,5 @@ public class BouteilleBiere {
     public void lireEtiquette() {
         System.out.println("Bouteille de " + nom + " (" + degreAlcool+ " degres) \nBrasserie : " + brasserie);
     }
+    
 }
