@@ -11,9 +11,9 @@ package tp2_bieres_damien;
 public class BouteilleBiere {
 
     String nom;
-    String degreAlcool;
+    double degreAlcool;
     String brasserie;
-    Boolean ouverte;
+    boolean ouverte;
     
     public void lireEtiquette() {
         System.out.println("Bouteille de " + nom + " (" + degreAlcool+ " degres) \nBrasserie : " + brasserie);
