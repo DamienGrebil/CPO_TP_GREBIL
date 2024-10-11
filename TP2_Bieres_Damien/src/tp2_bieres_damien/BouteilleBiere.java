@@ -14,13 +14,14 @@ public class BouteilleBiere {
     double degreAlcool;
     String brasserie;
     boolean ouverte;
+    public void lireEtiquette() { 
+        System.out.println ("Bouteille de " + nom + " (" + degreAlcool+ " degres) \nBrasserie : " + brasserie);
+    }
 
     public BouteilleBiere(String unNom, double unDegre, String uneBrasserie) {
         nom = unNom;
         degreAlcool = unDegre;
         brasserie = uneBrasserie;
         ouverte = false;
-        System.out.println ("Bouteille de " + nom + " (" + degreAlcool+ " degres) \nBrasserie : " + brasserie);
     }
-    
 }
