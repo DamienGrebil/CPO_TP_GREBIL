@@ -23,6 +23,8 @@ public class TP2_manip_Grebil {
         assiette1 = assiette3;
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ; 
         System.out.println("nb de calories de Assiette 3 : " + assiette3.nbCalories) ; 
+    // Question six, non cela ne fonctionne pas car l'un ne peux pas etre convertit en l'autre.
+        
     }
     
 }
