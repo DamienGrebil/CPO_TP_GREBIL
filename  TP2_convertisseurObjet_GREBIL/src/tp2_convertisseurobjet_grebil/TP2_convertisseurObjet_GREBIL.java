@@ -17,6 +17,7 @@ public class TP2_convertisseurObjet_GREBIL {
     public static void main(String[] args) {
         Convertisseur calcul = new Convertisseur();
         calcul.toString();
+        System.out.println(calcul);
     }
     
 }
