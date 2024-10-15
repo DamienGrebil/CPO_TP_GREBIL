@@ -15,7 +15,8 @@ public class TP2_convertisseurObjet_GREBIL {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Convertisseur nbConversions = new Convertisseur();
+        Convertisseur calcul = new Convertisseur();
+        calcul.nbConversions();
     }
     
 }
