@@ -33,4 +33,13 @@ public class BouteilleBiere {
         brasserie = uneBrasserie;
         ouvert = false;
     }
+    
+    @Override 
+    public String toString() { 
+        String chaine_a_retourner; 
+        chaine_a_retourner = nom + " (" + degreAlcool + " degrés) Ouverte ? ";   
+        if (ouvert == true ) chaine_a_retourner += "oui" ; 
+        else chaine_a_retourner += "non" ; 
+        return chaine_a_retourner ;  
+}
 }
