@@ -18,9 +18,11 @@ public class TP2_manip_Grebil {
     public static void main(String[] args) {
         Tartiflette assiette1 = new Tartiflette(500) ; 
         Tartiflette assiette2 = new Tartiflette(600) ;
-        Tartiflette assiette3 = assiette2 ;  // Assiette 2 et 3 referencent la meme tartiflette
-        System.out.println(assiette2);
-        System.out.println(calorie);
+        Tartiflette assiette3 = assiette2;  // Assiette 2 et 3 referencent la meme tartiflette
+        assiette2 = assiette1;
+        assiette1 = assiette3;
+        System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ; 
+        System.out.println("nb de calories de Assiette 3 : " + assiette3.nbCalories) ; 
     }
     
 }
