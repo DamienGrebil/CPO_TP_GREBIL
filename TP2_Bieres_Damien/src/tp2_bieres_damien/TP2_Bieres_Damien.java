@@ -21,5 +21,6 @@ public class TP2_Bieres_Damien {
         secondeBiere.lireEtiquette();
         BouteilleBiere troisiemeBiere = new BouteilleBiere("MegaDemon", 16.0,"Mort") ;
         troisiemeBiere.lireEtiquette();
+        troisiemeBiere.Decapsuler();
     }
 }
