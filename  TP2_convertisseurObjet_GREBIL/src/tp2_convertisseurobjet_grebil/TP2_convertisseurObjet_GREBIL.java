@@ -17,42 +17,35 @@ public class TP2_convertisseurObjet_GREBIL {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Convertisseur calcul = new Convertisseur();
-        calcul.toString();
-        System.out.println(calcul);
-    
-        double temp;
-        double C2K;
-        int type;
+        
+        Convertisseur premiernombre=new Convertisseur();
+       
+        double val1;
+        int conv;
         Scanner sc = new Scanner(System.in);
-        System.out.println ("saisssissez la temperature");
-        temp  = sc.nextDouble();
-
-        System.out.println ("Saisissez la conversion que vous souhaiter effectuer : \n 1|De Celcius vers Kelvin \n 2| De Kelvin vers Celcius \n 3| De Farenheit vers Celcius \n 4| De Celcius vers Farenheit \n 5| De Kelvin vers Farenheit \n 6| De Farenheit vers Kelvin  ");
-        type  = sc.nextInt();
-        if (type == 1){
-            C2K = CelciusVersKelvin(temp);
-            System.out.println("la temperature en Kelvin est:" + C2K);
+        System.out.println("Saisir la conversion");
+        System.out.println("1) De Celcius vers Kelvin");
+        System.out.println("2) Kelvin Vers Celcius");
+        System.out.println("3) Farenheit Vers Celcius");
+        System.out.println("4) Celcius Vers Farenheit");
+        System.out.println("5) Kelvin Vers Farenheit");
+        System.out.println("6) De Farenheit vers Kelvin");
+        conv = sc.nextInt();
+        System.out.println("Saisir la valeur que vous souhaiter convertir");
+        val1 = sc.nextDouble();
+        if (conv==1){
+            System.out.println(""+val1+" degres celcius est egal a "+premiernombre.CelciusVersKelvin(val1)+" degres Kelvin");
+        }else if (conv==2){
+            System.out.println(""+val1+" degres Kelvin est egal a "+premiernombre.KelvinVersCelcius(val1)+" degres celcius");
+        }else if (conv==3){
+            System.out.println(""+val1+" degres Farenheit est egal a "+premiernombre.FarenheitVersCelcius(val1)+" degres celcius");
+        }else if (conv==4){
+            System.out.println(""+val1+" degres Celcius est egal a "+premiernombre.CelciusVersFarenheit(val1)+" degres Farenheit");
+        }else if (conv==5){
+            System.out.println(""+val1+" degres Kelvin est egal a "+premiernombre.KelvinVersFarenheit(val1)+" degres Farenheit");
+        }else if (conv==6){
+            System.out.println(""+val1+" degres Farenheit est egal a "+premiernombre.FarenheitVersKelvin(val1)+" degres Kelvin");
         }
-        if (type== 2){
-            C2K = KelvinVersCelcius(temp);
-            System.out.println("la temperature en Celcius est:" + C2K);
-        }
-        if (type== 3){
-            C2K = FarenheitVersCelcius(temp);
-            System.out.println("la temperature en Celcius est:" + C2K);
-        }
-        if (type== 4){
-            C2K = CelciusVersFarenheit(temp);
-            System.out.println("la temperature en Kelvin est:" + C2K);
-        }
-        if (type== 5){
-           C2K = KelvinVersFarenheit(temp);
-            System.out.println("la temperature en Farenheit est:" + C2K);
-        }
-        if (type== 6){
-            C2K = FarenheitVersKelvin(temp);
-            System.out.println("la temperature en Kelvin est:" + C2K);
-        }
+        System.out.println(premiernombre);
     }
 }
