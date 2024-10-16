@@ -16,6 +16,7 @@ public class TP2_manip_Grebil {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+    int nbCalories =0;
         Tartiflette assiette1 = new Tartiflette(500) ; 
         Tartiflette assiette2 = new Tartiflette(600) ;
         Tartiflette assiette3 = assiette2;  // Assiette 2 et 3 referencent la meme tartiflette
@@ -24,7 +25,9 @@ public class TP2_manip_Grebil {
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ; 
         System.out.println("nb de calories de Assiette 3 : " + assiette3.nbCalories) ; 
     // Question six, non cela ne fonctionne pas car l'un ne peux pas etre convertit en l'autre.
-        
+        for( int i= 0; i<= 10;i++) {
+            Moussaka[] tableauMoussaka = new Moussaka[i];
+            tableauMoussaka[i] = Moussaka(100);
+        }
     }
-    
 }
