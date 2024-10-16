@@ -11,8 +11,10 @@ package tp2_manip_grebil;
  */
 public class Moussaka {
 int nbCalorie;
-    public Moussaka() {
-        Moussaka(nbCalorie);
+
+    public Moussaka(int nbCalorie) {
+        this.nbCalorie = nbCalorie;
     }
+   
        
 }
