@@ -14,11 +14,11 @@ public class Voiture {
     String Marque;
     int PuissanceCV;
     Personne proprietaire;
-    public Voiture(String LeModele,String LaMarque,int LaPuissanceCV, Personne Proprio){
-        Modele = LeModele;
-        Marque = LaMarque;
-        PuissanceCV = LaPuissanceCV;
-        proprietaire = null;
+    public Voiture(String Modele,String Marque,int PuissanceCV){
+        this.Modele = Modele;
+        this.Marque = Marque;
+        this.PuissanceCV = PuissanceCV;
+        this.proprietaire = null;
     }
 
     @Override

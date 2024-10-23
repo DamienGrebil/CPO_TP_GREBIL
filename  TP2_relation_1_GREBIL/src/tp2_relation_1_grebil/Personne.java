@@ -14,9 +14,9 @@ public class Personne {
     String prenom;
     int nb_Voitures;
     Voiture[] liste_voitures;
-    public Personne(String UnNom, String UnPrenom, Voiture[] Vagos){
-        nom = UnNom;
-        prenom = UnPrenom;
+    public Personne(String Nom, String Prenom){
+        this.nom = Nom;
+        this.prenom = Prenom;
         liste_voitures = new Voiture[3];
         nb_Voitures= 0;
     }
