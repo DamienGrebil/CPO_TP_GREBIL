@@ -12,14 +12,17 @@ package tp2_relation_1_grebil;
 public class Personne {
     String nom;
     String prenom;
-    public Personne(String UnNom, String UnPrenom){
+    Voiture[] liste_voiture;
+    public Personne(String UnNom, String UnPrenom, Voiture[] Vagos){
         nom = UnNom;
         prenom = UnPrenom;
+        liste_voiture = Vagos;
+        
     }
 
     @Override
     public String toString() {
-        return "Personne{" + "nom=" + nom + ", prenom=" + prenom + '}';
+        return "Personne{" + "nom=" + nom + ", prenom=" + prenom + ", Vagos=" + liste_voiture + '}';
     }
         
 }
