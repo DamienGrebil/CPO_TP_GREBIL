@@ -18,7 +18,7 @@ public class Voiture {
         Modele = LeModele;
         Marque = LaMarque;
         PuissanceCV = LaPuissanceCV;
-        proprietaire = Proprio;
+        proprietaire = null;
     }
 
     @Override
