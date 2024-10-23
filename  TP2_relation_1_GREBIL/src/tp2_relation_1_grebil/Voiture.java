@@ -20,7 +20,8 @@ public class Voiture {
         this.PuissanceCV = PuissanceCV;
         this.proprietaire = null;
     }
-
+    
+    
     @Override
     public String toString() {
         return "Voiture{" + "Modele=" + Modele + ", Marque=" + Marque + ", PuissanceCV=" + PuissanceCV + '}';
