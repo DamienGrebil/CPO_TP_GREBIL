@@ -12,5 +12,14 @@ package tp2_relation_1_grebil;
 public class Personne {
     String nom;
     String prenom;
+    public Personne(String UnNom, String UnPrenom){
+        nom = UnNom;
+        prenom = UnPrenom;
+    }
+
+    @Override
+    public String toString() {
+        return "Personne{" + "nom=" + nom + ", prenom=" + prenom + '}';
+    }
         
 }

@@ -13,9 +13,15 @@ public class Voiture {
     String Modele;
     String Marque;
     int PuissanceCV;
-        public Voiture(String LeModele,String LaMarque,int LaPuissanceCV){
-            Modele = LeModele;
-            Marque = LaMarque;
-            PuissanceCV = LaPuissanceCV;
-        }
+    public Voiture(String LeModele,String LaMarque,int LaPuissanceCV){
+        Modele = LeModele;
+        Marque = LaMarque;
+        PuissanceCV = LaPuissanceCV;
+    }
+
+    @Override
+    public String toString() {
+        return "Voiture{" + "Modele=" + Modele + ", Marque=" + Marque + ", PuissanceCV=" + PuissanceCV + '}';
+    }
+    
 }
