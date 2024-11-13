@@ -5,6 +5,9 @@
  */
 package tp3_heroic_fantasy_grebil;
 
+import Armes.Epee;
+import Armes.Arme;
+import Armes.Baton;
 import java.util.ArrayList;
 
 /**
