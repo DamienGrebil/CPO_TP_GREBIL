@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+* TP2 relation 1
+* DamienGrebil
+* Octobre 2024
  */
 package tp3_heroic_fantasy_grebil;
 
