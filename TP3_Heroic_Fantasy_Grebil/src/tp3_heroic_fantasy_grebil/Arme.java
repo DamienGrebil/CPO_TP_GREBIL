@@ -18,7 +18,7 @@ public abstract class Arme {
         if ( nivatt <= 100){
             this.nivatt = nivatt;
         }else{
-            nivatt = 0;
+            this.nivatt = 0;
         }
     }
 
