@@ -19,6 +19,13 @@ public class Epee extends Arme{
         }else{
            this.finesse= 0; 
         }
+        
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Epee{" + super.toString() + "finesse=" + finesse + '}';
     }
     
     

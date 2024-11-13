@@ -19,6 +19,12 @@ public class Baton extends Arme{
         }else{
             this.age = 0;
         }
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Baton{"+ super.toString() + "age=" + age + '}';
     }
     
 }
