@@ -1,7 +1,7 @@
 /*
-* TP2 relation 1
+* TP3
 * DamienGrebil
-* Octobre 2024
+* Novembre 2024
  */
 package tp3_heroic_fantasy_grebil;
 
@@ -9,6 +9,22 @@ package tp3_heroic_fantasy_grebil;
  *
  * @author damie
  */
-public class Arme {
+public abstract class Arme {
+    String nom;
+    int nivatt;
+
+    public Arme(String nom, int nivatt) {
+        this.nom = nom;
+        if ( nivatt <= 100){
+            this.nivatt = nivatt;
+        }else{
+            nivatt = 0;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Arme{" + "nom=" + nom + ", nivatt=" + nivatt + '}';
+    }
     
 }
