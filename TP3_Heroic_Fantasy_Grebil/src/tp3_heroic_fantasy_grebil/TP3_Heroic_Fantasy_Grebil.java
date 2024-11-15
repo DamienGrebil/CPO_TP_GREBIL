@@ -5,6 +5,9 @@
  */
 package tp3_heroic_fantasy_grebil;
 
+import Personnages.Guerrier;
+import Personnages.magicien;
+import Personnages.Personnages;
 import Armes.Epee;
 import Armes.Arme;
 import Armes.Baton;
@@ -25,7 +28,7 @@ public class TP3_Heroic_Fantasy_Grebil {
         Baton Chene = new Baton(4,"Chêne",5);
         Baton Charme = new Baton(5,"Charme",6);
     
-        ArrayList<Arme> Armes = new ArrayList<Arme>();
+        ArrayList<Arme> Armes = new ArrayList<>();
         Armes.add(Exca);
         Armes.add(Dur);
         Armes.add(Chene);
@@ -37,9 +40,26 @@ public class TP3_Heroic_Fantasy_Grebil {
             System.out.print(", ");
         }
         System.out.print("]");
+        }
+        
+        magicien Gandalf = new magicien(true,"Gandalf",68);
+        magicien Gar = new magicien(false,"Garcimore",44);    
+        Guerrier Conan = new Guerrier(false,"Conan",78);
+        Guerrier Lan = new Guerrier(true,"Lannister",45);
         
         
+        ArrayList<Personnages> Personnages = new ArrayList<>();
+        Personnages.add(Gandalf);
+        Personnages.add(Gar);
+        Personnages.add(Conan);
+        Personnages.add(Lan);
         
+        System.out.print("[");  
+        for (int i = 0; i < Personnages.size(); i++) {
+        System.out.print(Personnages.get(i));  if (i < Personnages.size() - 1) {
+            System.out.print(", ");
+        }
+        System.out.print("]");
         }
     }
 }
