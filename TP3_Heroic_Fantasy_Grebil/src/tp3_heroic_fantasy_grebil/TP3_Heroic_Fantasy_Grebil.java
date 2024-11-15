@@ -61,6 +61,13 @@ public class TP3_Heroic_Fantasy_Grebil {
         }
         System.out.print("]");
         }
+        
+        Gandalf.newArme(Chene);
+        Gandalf.Equipe(0);
+        Conan.newArme(Dur);
+        Conan.newArme(Exca);
+        Conan.Equipe(1);
+        System.out.println("\n" + Conan);
     }
 }
 
