@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public abstract class Personnages {
     String nom;
     int hp;
+    int nbperso= 0;
     ArrayList<Arme> Sacados = new ArrayList<>();
     Arme arme_en_main = null;
     
@@ -22,6 +23,7 @@ public abstract class Personnages {
     public Personnages(String nom, int hp) {
         this.nom = nom;
         this.hp = hp;
+        nbperso ++ ;
     }
 
     @Override
@@ -46,6 +48,9 @@ public abstract class Personnages {
         }
     }
     
-    
-    
+    @Override
+    public void finalize() throws Throwable{
+        nbperso -- ;
+        super.finalize();
+    }
 }
