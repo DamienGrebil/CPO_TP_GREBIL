@@ -19,7 +19,20 @@ public abstract class Personnages {
     ArrayList<Arme> Sacados = new ArrayList<>();
     Arme arme_en_main = null;
     
+    public void seFatiguer() {
+        this.hp -= 10;
+        if (this.hp < 0) this.hp = 0;
+    }
 
+    public boolean estVivant() {
+        return this.hp > 0;
+    }
+
+    public void estAttaque(int points) {
+        this.hp -= points;
+        if (this.hp < 0) this.hp = 0;
+    }
+    
     public Personnages(String nom, int hp) {
         this.nom = nom;
         this.hp = hp;
