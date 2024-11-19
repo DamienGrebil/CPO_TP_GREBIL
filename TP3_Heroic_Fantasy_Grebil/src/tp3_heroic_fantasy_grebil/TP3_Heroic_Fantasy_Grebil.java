@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * @author damie
  */
 public class TP3_Heroic_Fantasy_Grebil {
-
+    
     /**
      * @param args the command line arguments
      */
@@ -68,6 +68,7 @@ public class TP3_Heroic_Fantasy_Grebil {
         Conan.newArme(Exca);
         Conan.Equipe(1);
         System.out.println("\n" + Conan);
+        
     }
 }
 

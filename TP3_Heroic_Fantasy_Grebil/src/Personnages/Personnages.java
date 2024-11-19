@@ -47,7 +47,7 @@ public abstract class Personnages {
         System.out.print("nouvelle arme équipé");
         }
     }
-    
+                                     
     @Override
     public void finalize() throws Throwable{
         nbperso -- ;
